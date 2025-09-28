@@ -15,10 +15,11 @@ public class ProductBasket {
 
     public void addProduct(Product product) {
         for (int i = 0; i < products.length; i++) {
-            if (products[i] == null) {
-                products[i] = product;
-            } else {
+            if (products[i] != null) {
                 System.out.println("Невозможно добавить продукт");
+            } else {
+                products[i] = product;
+                System.out.println(products[i]);
             }
         }
     }
