@@ -20,6 +20,15 @@ public class DiscountedProduct extends Product{
 
     @Override
     public int getCost() {
-        return baseCost ;
+        baseCost = baseCost - saleCost;
+        return baseCost;
+    }
+
+    @Override
+    public String toString() {
+        return "DiscountedProduct{" +
+                "saleCost=" + saleCost +
+                ", baseCost=" + baseCost +
+                '}';
     }
 }

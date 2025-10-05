@@ -6,7 +6,10 @@ public abstract class Product {
 
     public Product(String name, int cost) {
         this.name = name;
+    }
 
+    public boolean isSpecial(boolean numberProducts) {
+        return numberProducts;
     }
 
     public String getName() {
@@ -17,6 +20,6 @@ public abstract class Product {
 
     @Override
     public String toString() {
-        return  name + ": ";
+        return name + ": ";
     }
 }
