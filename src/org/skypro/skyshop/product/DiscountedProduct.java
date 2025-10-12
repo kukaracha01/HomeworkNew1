@@ -4,8 +4,8 @@ public class DiscountedProduct extends Product{
     private int baseCost;
     private int saleCost;
 
-    public DiscountedProduct(String name, int cost, int baseCost, int saleCost) {
-        super(name, cost);
+    public DiscountedProduct(String name, int baseCost, int saleCost) {
+        super(name);
         this.baseCost = baseCost;
         this.saleCost = saleCost;
     }
@@ -19,9 +19,15 @@ public class DiscountedProduct extends Product{
     }
 
     @Override
+    public int isSpecial() {
+        return 0;
+    }
+
+    @Override
     public int getCost() {
-        baseCost = baseCost - saleCost;
-        return baseCost;
+        int costAfterSale = 0;
+        costAfterSale = baseCost - saleCost;
+        return costAfterSale;
     }
 
     @Override

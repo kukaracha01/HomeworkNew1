@@ -22,10 +22,10 @@ public class App {
 //        productBasket.addProduct(products3);
 //        productBasket.addProduct(products4);
 //        productBasket.addProduct(products5);
-//        productBasket.basketContents();
-//        productBasket.allCost();
-//        productBasket.nameProduct("Дыня");
-//        productBasket.nameProduct("Ромашка");
+        productBasket.basketContents();
+        productBasket.allCost();
+        productBasket.nameProduct("Дыня");
+        productBasket.nameProduct("Ромашка");
 //        productBasket.clearingBasket();
 //        productBasket.allCost();
 //        productBasket.nameProduct("Дыня");
