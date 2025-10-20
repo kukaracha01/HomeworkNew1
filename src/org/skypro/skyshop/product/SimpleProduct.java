@@ -10,8 +10,8 @@ public class SimpleProduct extends Product {
     }
 
     @Override
-    public int isSpecial() {
-        return 0;
+    public boolean isSpecial() {
+        return false;
     }
 
     @Override
@@ -21,8 +21,6 @@ public class SimpleProduct extends Product {
 
     @Override
     public String toString() {
-        return "SimpleProfuct{" +
-                "cost=" + cost +
-                '}';
+        return getName() + ": " + getCost();
     }
 }

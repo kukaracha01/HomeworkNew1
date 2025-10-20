@@ -9,7 +9,9 @@ public class ProductBasket {
 
     public void addProduct(Product product) {
         for (int i = 0; i < products.length; i++) {
-            if (products[i] == null) {
+            if (products[i] != null) {
+                continue;
+            } else if (products[i] == null){
                 products[i] = product;
                 System.out.println(products[i]);
                 break;
@@ -32,19 +34,20 @@ public class ProductBasket {
             if (products[i] != null) {
                 System.out.println(products[i]);
             }
-            break;
         }
         System.out.println("Итого: " + allCost());
+        System.out.println("Специальных товаров: ");
     }
 
     public boolean nameProduct(String name) {
+        boolean found = false;
         for (int i = 0; i < products.length; i++) {
-            name = products[i].getName();
-            if (products[i].getName() != null) {
-                Objects.equals(products[i].getName(), name);
+            if (Objects.equals(products[i].getName(), name)) {
+                found = true;
+                break;
             }
         }
-        return true;
+        return found;
     }
 
     public void clearingBasket() {

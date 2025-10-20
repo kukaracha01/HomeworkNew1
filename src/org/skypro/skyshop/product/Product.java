@@ -8,7 +8,7 @@ public abstract class Product {
         this.name = name;
     }
 
-    public abstract int isSpecial();
+    public abstract boolean isSpecial();
 
     public String getName() {
         return name;

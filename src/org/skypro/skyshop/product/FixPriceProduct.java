@@ -8,8 +8,8 @@ public class FixPriceProduct extends Product {
     }
 
     @Override
-    public int isSpecial() {
-        return 0;
+    public boolean isSpecial() {
+      return true;
     }
 
     @Override
@@ -19,6 +19,6 @@ public class FixPriceProduct extends Product {
 
     @Override
     public String toString() {
-        return Product.class.getName() + ": " + FIX_PRICE;
+        return getName() + ": Фиксированная цена " + FIX_PRICE;
     }
 }
