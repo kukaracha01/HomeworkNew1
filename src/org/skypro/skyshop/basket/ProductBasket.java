@@ -33,7 +33,7 @@ public class ProductBasket {
     public void basketContents() {
         for (int i = 0; i < products.length; i++) {
             if (products[i] != null) {
-                System.out.println(products[i]);
+                continue;
             }
         }
         System.out.println("Итого: " + allCost());
